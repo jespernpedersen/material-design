@@ -56,14 +56,6 @@ h2 {
     grid-column-gap: 30px;
 }
 
-.product {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.product p {
-    font-size: 12px;
-}
 
 .buy {
     padding: 8px 12px;
@@ -75,3 +67,5 @@ h2 {
     color: white;
     border-radius: 8px;
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

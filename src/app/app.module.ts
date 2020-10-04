@@ -10,8 +10,8 @@ import { StarFillComponent }   from './starfill.component';
 import { RatingComponent }   from './rating.component';
 
 // Products
-import { ProductComponent } from './product.component';
-import { ProductsComponent } from './products.component';
+import { ProductComponent } from './product/product.component';
+import { ProductsComponent } from './products/products.component';
 
 // Content Insertion
 import { JumboTronComponent } from './jumbotron.component';
@@ -19,6 +19,9 @@ import { JumboTronComponent } from './jumbotron.component';
 // Pipes
 import { TruncatePipe } from './truncate.pipe';
 import { SwearPipe } from './swear.pipe';
+import { ProductService } from './product/product.service';
+import {MatCard, MatCardModule} from '@angular/material/card';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -34,7 +37,10 @@ import { SwearPipe } from './swear.pipe';
     JumboTronComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    MatCardModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

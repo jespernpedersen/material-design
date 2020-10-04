@@ -1,0 +1,13 @@
+<mat-card>
+    <img src="{{ data.imageUrl }}" class="mr-3" alt="...">
+    <div class="media-body">
+        <div class="content">
+        <h3 class="mt-0">{{ data.productName }}</h3>
+        <p class="date">{{ data.releasedDate | date | uppercase  }}</p>
+        <rating
+            [rating]="data.rating"
+            [numOfReviews]="data.numOfReviews"></rating>
+        <p>{{ data.description | swear }}</p>
+        </div>
+    </div>
+</mat-card>
