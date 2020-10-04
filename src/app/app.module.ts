@@ -19,6 +19,7 @@ import { JumboTronComponent } from './jumbotron.component';
 // Pipes
 import { TruncatePipe } from './truncate.pipe';
 import { SwearPipe } from './swear.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { SwearPipe } from './swear.pipe';
     JumboTronComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
