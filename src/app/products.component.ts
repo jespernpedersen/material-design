@@ -4,18 +4,24 @@ import { ProductService } from './product.service'
 @Component({
     selector: 'products',
     template: `
-        <h2>Products</h2>
-        <div *ngIf="products.length > 0; else loading">
-            <div *ngFor="let product of products">
+        <mat-toolbar>Products</mat-toolbar>
+        <mat-grid-list  cols="3" *ngIf="products.length > 0; else loading">
+            <mat-grid-tile *ngFor="let product of products">
                 <product [data]="product"></product>                
-            </div>  
-        </div>
+            </mat-grid-tile>
+        </mat-grid-list>
         <ng-template #loading>
             <div>
                 No products to display                
             </div>
         </ng-template>
     `,
+
+    styles: [`
+        .mat-grid-list {
+            background-color: lightgreen;
+        }
+    `],
     providers: [ProductService]    
 })
 export class ProductsComponent{

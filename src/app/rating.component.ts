@@ -12,8 +12,7 @@ import { Component, Input } from '@angular/core'
         <ng-container *ngIf="rating < 4; else elseBlock4"><star (click)="onClick(4)"></star></ng-container>
         <ng-template #elseBlock4><starfill (click)="onClick(4)"></starfill></ng-template>
         <ng-container *ngIf="rating < 5; else elseBlock5"><star (click)="onClick(5)"></star></ng-container>
-        <ng-template #elseBlock5><starfill (click)="onClick(5)"></starfill></ng-template>        
-        {{ numOfReviews }}        
+        <ng-template #elseBlock5><starfill (click)="onClick(5)"></starfill></ng-template>
         `,
     styles: [
         'star { color: orange; }','starfill { color: orange; }'
