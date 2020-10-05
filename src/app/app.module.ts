@@ -19,9 +19,19 @@ import { JumboTronComponent } from './jumbotron.component';
 // Pipes
 import { TruncatePipe } from './truncate.pipe';
 import { SwearPipe } from './swear.pipe';
-import { ProductService } from './product/product.service';
-import {MatCard, MatCardModule} from '@angular/material/card';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// Material Design
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+
+
+
 
 
 @NgModule({
@@ -39,8 +49,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    MatToolbarModule,
+    MatTabsModule,
+    MatExpansionModule,
+    MatGridListModule,
     MatCardModule,
-    BrowserAnimationsModule
+    MatButtonModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
